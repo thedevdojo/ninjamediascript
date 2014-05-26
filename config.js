@@ -4,14 +4,14 @@
 var magnificent = {
 
   headline : "Ninja Media Script Documentation",
-  name : "Ninja Media Script 1.0.9",
+  name : "Ninja Media Script 1.1.0",
   short_description : "Your Viral Fun Media Sharing Script",
   primary_button_url : "http://devdojo.ticksy.com",
   primary_button_text : "Support Center",
   // Look for the icon name here: http://fontawesome.io/icons/
   primary_button_icon : "fa-book",
   color_scheme : 'light',
-  color : '#F35656',
+  color : '#0098cb',
 
   view_documentation_button_text : "",
 
