@@ -8,14 +8,14 @@ Ninja Media Script is a Viral Fun Media Sharing Script. This script is so easy t
  * Troubleshooting
  * Further Reading
  
-*Current version: [1.0.9]*
+*Current version: [1.1.0]*
 
 Quick Start Videos
 ===
 
 Video 01 - Quick Start
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/qRmFzjRSgHc" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/hDLAj8p1WXM" frameborder="0" allowfullscreen></iframe>
 
 Video 02 - Media
 
@@ -47,20 +47,37 @@ Installing the script is very easy. Follow the steps below to install this scrip
 
 1. Move all the files inside of the 'ninja-media-script' folder to the root of your website.
 2. Create a new database on your server and give it any name you would like to use.
-3. Navigate to 'yourwebsite.com/install' and you will be presented with an install screen. The install screen should look similar to the following image:
+3. Navigate to 'yourwebsite.com/install.php' and you will be presented with an install screen. The install screen should look similar to the following image:
+
 ![Install Screen](images/install-screen.png)
 
-4. On the install screen, you'll want to add your Admin Username, Email, and Password. Next you'll enter your database info including your Database Host, Name, User, and Password.
 
-5. Click install and if everything went through correctly, you should see a screen similar to the following:
-![Install Screen 2](images/install-screen2.png)
+4 - This screen will tell you if your server meets the minimum requirements for the script. If all goes well you should see a long list of green checkboxes. Finally, click next to visit the Install screen which should look like the following:
 
-6. Then just 'Click Here to Visit Your Site' and you'll be taken to your new site.
+![Install Screen](images/install-screen-2.png)
+
+5 - Next, on the install screen, you'll enter your database info including your Database Host, Name, User, and Password. Then enter your Admin Username, Email, and Password. After You've entered your info, click next and you'll be presented with the install screen which should look like the following:
+
+![Install Screen](images/install-screen-3.png)
+
+6 - Click install and if everything went through correctly, you should see a screen similar to the following:
+
+![Install Screen 2](images/install-screen-4.png)
+
+7 - Then just 'Click Here to Visit Your Site' and you'll be taken to your new site.
 
 Note, if you are having trouble installing, be sure to visit <a href="http://forums.devdojo.com/10-common-installation-issues" target="_blank">http://forums.devdojo.com/10-common-installation-issues</a> to checkout some common install issues.
 
 Upgrading
 ---
+
+UPGRADING FROM 1.0.9:
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/JonVvhmZmyM" frameborder="0" allowfullscreen></iframe>
+
+
+OR IF YOU ARE UPGRADING FROM 1.0.8 or LOWER
+--
 
 Follow the steps below to upgrade your script to the latest version:
 
@@ -166,7 +183,7 @@ Configuring Your Password Reset Functionality
 <b>In order for the password reset to work you'll need to add your gmail address and password to:</b>
 
 ```
-app/config/mail.php
+application/app/config/mail.php
 ```
 
 Change line 57:
@@ -196,20 +213,16 @@ Translating the Script
 
 <b>You can translate the script to any language that you would prefer, here is how to do it:</b>
 
-Simply copy the app/lang/en folder and rename the 'en' folder to whatever you want to call your language.
-
-Then change all of the language files in the new folder you just created.
-
-Next inside of app/config/app.php line 55 change:
+Inside of content/locale/lang.php line 3 change:
 
 ```
-'locale' => 'en',
+$lang = 'english';
 ```
 
-to your language folder name:
+to your language file name:
 
 ```
-'locale' => 'your_language_folder',
+'content/locale/languages/language_file.php',
 ```
 
 Then your app will be translated to your langauge :)
